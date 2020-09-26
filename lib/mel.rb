@@ -1,6 +1,9 @@
+require_relative 'mel_constants'
 # class Mel for Melbourne.
 class Mel
   attr_reader :destination, :address, :url, :distance
+
+  include MelHelper
 
   def initialize(destination, address, url, distance)
     @destination = destination
@@ -8,16 +11,14 @@ class Mel
     @distance = distance
     @url = url
   end
+
+  def self.destination_input
+    destination = {}
+    INPUTS.each do |input|
+      puts "What is the #{input}?"
+      print '> '
+      destination[input] = gets.chomp
+    end
+    destination
+  end
 end
-
-places = Mel.new(
-  'Coffee in CBD',
-  'Melbourne CBD',
-  '21.4km (25 mins)',
-  'https://www.broadstreet.com.au/melbourne/guides/cafes-melbourne'
-)
-
-puts "What destination would you like to add?"
-print"> "
-puts places = gets.chomp
-puts places
