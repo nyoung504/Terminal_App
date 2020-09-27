@@ -1,3 +1,3 @@
 module MelHelper
-  INPUTS = %i[destination address url distance].freeze
+  INPUTS = %i[location address url distance].freeze
 end

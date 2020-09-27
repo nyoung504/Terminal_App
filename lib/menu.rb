@@ -1,6 +1,9 @@
+require_relative 'mel_constants'
 class Menu
+  include MelHelper
+
   def initialize
-    @destination = []
+    @destinations= []
   end
 
   def display_menu
@@ -15,10 +18,19 @@ class Menu
     gets.chomp.to_i
   end
 
+  def terminal_table
+    rows =  @destinations.map do |destination|
+      [destination.location, destination.address, destination.distance, destination.url]
+  end
+  table = Terminal::Table.new({headings: INPUTS, rows: rows})
+  puts table
+
+end
+
   def create_destination
     destination = Mel.destination_input
-    @destination << Mel.new(
-      destination[:destination],
+    @destinations << Mel.new(
+      destination[:location],
       destination[:address],
       destination[:distance],
       destination[:url]
@@ -30,7 +42,7 @@ class Menu
       display_menu
       case selection
       when 1
-        p @destination
+        terminal_table
       when 2
         create_destination
       when 3
@@ -41,3 +53,4 @@ class Menu
     end
   end
 end
+
