@@ -5,14 +5,14 @@ class Mel
 
   include MelHelper
 
-	def initialize(location, address, url, distance)
+  def initialize(location, address, url, distance)
     @location = location
     @address = address
     @distance = distance
     @url = url
   end
 
-	def self.destination_input
+  def self.destination_input
     destination = {}
     INPUTS.each do |input|
       puts "What is the #{input}?"

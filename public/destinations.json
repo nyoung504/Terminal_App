@@ -1,0 +1,19 @@
+[
+  
+  { 
+    "location": "Coffee in CBD",
+    "address": "Melbourne CBD",
+    "url":
+    "https://www.broadsheet.com.au/melbourne/guides/cafes-melbourne",
+    "distance":  "21.4 km (25 mins)"
+    }, 
+
+    {
+      "location": "12 Apostles",
+      "address": "Port Campbell NAtional Park",
+      "url":
+      "https://www.parks.vic.gov.au/places-to-see/parks/port-campbell-national-park/things-to-do/twelve-apostles",
+      "distance":  "234.3 km (2hrs 30mins)"
+    }
+
+]

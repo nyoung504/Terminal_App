@@ -3,7 +3,7 @@ class Menu
   include MelHelper
 
   def initialize
-    @destinations= []
+    @destination_repo = DestinationRepo.new
   end
 
   def display_menu
@@ -19,22 +19,11 @@ class Menu
   end
 
   def terminal_table
-    rows =  @destinations.map do |destination|
-      [destination.location, destination.address, destination.distance, destination.url]
-  end
-  table = Terminal::Table.new({headings: INPUTS, rows: rows})
-  puts table
-
-end
-
-  def create_destination
-    destination = Mel.destination_input
-    @destinations << Mel.new(
-      destination[:location],
-      destination[:address],
-      destination[:distance],
-      destination[:url]
-    )
+    rows = @destination_repo.destinations.map do |destination|
+      [destination["location"], destination["address"], destination["distance"], destination["url"]]
+    end
+    table = Terminal::Table.new({ headings: INPUTS, rows: rows })
+    puts table
   end
 
   def router
@@ -44,7 +33,7 @@ end
       when 1
         terminal_table
       when 2
-        create_destination
+        @destination_repo.create_destination
       when 3
         exit
       else
@@ -53,4 +42,3 @@ end
     end
   end
 end
-
