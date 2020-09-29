@@ -2,19 +2,61 @@
   {
     "location": "Coffee in CBD",
     "address": "Melbourne CBD",
-    "distance": "https://www.broadsheet.com.au/melbourne/guides/cafes-melbourne",
-    "url": "21.4 km (25 mins)"
+    "distance": "21.4 kms (25 mins)",
+    "url": "https://www.broadsheet.com.au/melbourne/guides/cafes-melbourne"
   },
   {
     "location": "12 Apostles",
-    "address": "Port Campbell NAtional Park",
-    "distance": "https://www.parks.vic.gov.au/places-to-see/parks/port-campbell-national-park/things-to-do/twelve-apostles",
-    "url": "234.3 km (2hrs 30mins)"
+    "address": "Port Campbell National Park",
+    "distance": "234.3 kms (2hrs 30mins)",
+    "url": "https://www.parks.vic.gov.au/"
   },
   {
     "location": "Penguin Parade",
     "address": "1019 Ventnor Rd, Summerlands",
-    "distance": "https://www.penguins.org.au/",
-    "url": "169 km (2hr)"
+    "distance": "169 kms (2hr)",
+    "url": "https://www.penguins.org.au/"
+  },
+  {
+    "location": "Yarra Valley Wineries",
+    "address": "Yarra Valley region ",
+    "distance": "59 kms (1 hr)",
+    "url": "https://visityarravalley.com.au/"
+  },
+  {
+    "location": "Melbourne Zoo",
+    "address": "Elliott Ave, Parkville VIC ",
+    "distance": "https://www.zoo.org.au/melbourne/",
+    "url": "18 kms  (16 mins)"
+  },
+  {
+    "location": "Sovereign Hill - Gold Rush",
+    "address": "Bradshaw St, Golden Point",
+    "distance": "https://www.sovereignhill.com.au/",
+    "url": "113 kms (1hr 20m)"
+  },
+  {
+    "location": "Bushwalk ",
+    "address": "Grampians National Park",
+    "distance": "https://www.parks.vic.gov.au/",
+    "url": "256 kms (3 hrs)"
+  },
+  {
+    "location": "Mornington Peninsula",
+    "address": "End Portsea Pub ",
+    "distance": "https://www.visitmorningtonpeninsula.org/",
+    "url": "134 kms ( 2hrs)"
+  },
+  {
+    "location": "Wilsons Promontory",
+    "address": "Gippsland VIC 3960",
+    "distance": "https://www.parks.vic.gov.au/",
+    "url": "262 kms (4 hrs)"
+  },
+  {
+    "location": "Tower Hill ",
+    "address": "Tower Hill VIC",
+    "distance": "https://www.towerhill.org.au/",
+    "url": "277 kms (3hrs 15m)"
   }
 ]

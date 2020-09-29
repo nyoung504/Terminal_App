@@ -6,29 +6,22 @@ class Menu
     @destination_repo = DestinationRepo.new
   end
 
-  def display_menu
-    puts 'Welcome to the Tourist destinations of Melbourne'
-    puts '1. View all destinations.'
-    puts '2. Create new destination.'
-    puts '3. Exit'
-  end
-
   def selection
-    print '> '
-    gets.chomp.to_i
+    PROMPT.select("Welcome to Melbourne/'s top Tourist Destinations") do |menu|
+      menu.choice({ name: 'View all destinations', value: 1 })
+      menu.choice({ name: 'Create new destination', value: 2 })
+      menu.choice({ name: 'Exit', value: 3 })
+    end
   end
 
   def terminal_table
-    rows = @destination_repo.destinations.map do |destination|
-      destination.convert_to_array
-    end
-    table = Terminal::Table.new({ headings: INPUTS, rows: rows })
+    rows = @destination_repo.destinations.map(&:convert_to_array)
+    table = Terminal::Table.new({ headings: HEADINGS, rows: rows })
     puts table
   end
 
   def router
     loop do
-      display_menu
       case selection
       when 1
         terminal_table
