@@ -1,5 +1,6 @@
 require 'terminal-table'
 require 'tty-prompt'
+require'colorize'
 
 require_relative 'menu'
 require_relative 'mel'

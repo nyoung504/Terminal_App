@@ -2,61 +2,61 @@
   {
     "location": "Coffee in CBD",
     "address": "Melbourne CBD",
-    "distance": "21.4 kms (25 mins)",
-    "url": "https://www.broadsheet.com.au/melbourne/guides/cafes-melbourne"
+    "url": "https://www.broadsheet.com.au/melbourne/guides/cafes-melbourne",
+    "distance": "21.4 kms (25 mins)"
   },
   {
     "location": "12 Apostles",
     "address": "Port Campbell National Park",
-    "distance": "234.3 kms (2hrs 30mins)",
-    "url": "https://www.parks.vic.gov.au/"
+    "url": "https://www.parks.vic.gov.au/",
+    "distance": "234.3 kms (2hrs 30m)"
   },
   {
     "location": "Penguin Parade",
     "address": "1019 Ventnor Rd, Summerlands",
-    "distance": "169 kms (2hr)",
-    "url": "https://www.penguins.org.au/"
+    "url": "https://www.penguins.org.au/",
+    "distance": "169 kms (2hr)"
   },
   {
     "location": "Yarra Valley Wineries",
     "address": "Yarra Valley region ",
-    "distance": "59 kms (1 hr)",
-    "url": "https://visityarravalley.com.au/"
+    "url": "https://visityarravalley.com.au/",
+    "distance": "59 kms (1 hr)"
   },
   {
     "location": "Melbourne Zoo",
     "address": "Elliott Ave, Parkville VIC ",
-    "distance": "https://www.zoo.org.au/melbourne/",
-    "url": "18 kms  (16 mins)"
+    "url": "https://www.zoo.org.au/melbourne/",
+    "distance": "18 kms (16 mins)"
   },
   {
     "location": "Sovereign Hill - Gold Rush",
     "address": "Bradshaw St, Golden Point",
-    "distance": "https://www.sovereignhill.com.au/",
-    "url": "113 kms (1hr 20m)"
+    "url": "https://www.sovereignhill.com.au/",
+    "distance": "113 kms (1hr 20m)"
   },
   {
     "location": "Bushwalk ",
     "address": "Grampians National Park",
-    "distance": "https://www.parks.vic.gov.au/",
-    "url": "256 kms (3 hrs)"
+    "url": "https://www.parks.vic.gov.au/",
+    "distance": "256 kms (3 hrs)"
   },
   {
     "location": "Mornington Peninsula",
     "address": "End Portsea Pub ",
-    "distance": "https://www.visitmorningtonpeninsula.org/",
-    "url": "134 kms ( 2hrs)"
+    "url": "https://www.visitmorningtonpeninsula.org/",
+    "distance": "134 kms (2hrs)"
   },
   {
     "location": "Wilsons Promontory",
     "address": "Gippsland VIC 3960",
-    "distance": "https://www.parks.vic.gov.au/",
-    "url": "262 kms (4 hrs)"
+    "url": "https://www.parks.vic.gov.au/",
+    "distance": "262 kms (4 hrs)"
   },
   {
     "location": "Tower Hill ",
     "address": "Tower Hill VIC",
-    "distance": "https://www.towerhill.org.au/",
-    "url": "277 kms (3hrs 15m)"
+    "url": "https://www.towerhill.org.au/",
+    "distance": "277 kms (3hrs 15m)"
   }
 ]

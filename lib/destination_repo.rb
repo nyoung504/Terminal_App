@@ -12,7 +12,7 @@ class DestinationRepo
   end
 
   def read_destination
-    data = File.read(DESTINATIONS_FILE)
+    File.read(DESTINATIONS_FILE)
   end
 
   def write_destination
@@ -20,8 +20,8 @@ class DestinationRepo
       {
         location: destination.location,
         address: destination.address,
-        distance: destination.distance,
-        url: destination.url
+        url: destination.url,
+        distance: destination.distance
       }
     end
     File.write(DESTINATIONS_FILE, JSON.pretty_generate(data))
@@ -32,8 +32,8 @@ class DestinationRepo
       Mel.new(
         destination['location'],
         destination['address'],
-        destination['distance'],
-        destination['url']
+        destination['url'],
+        destination['distance']
       )
     end
   end
@@ -43,8 +43,8 @@ class DestinationRepo
     @destinations << Mel.new(
       destination[:location],
       destination[:address],
-      destination[:distance],
-      destination[:url]
+      destination[:url],
+      destination[:distance]
     )
   end
 end

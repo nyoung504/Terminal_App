@@ -8,12 +8,12 @@ class Mel
   def initialize(location, address, url, distance)
     @location = location
     @address = address
-    @distance = distance
     @url = url
+    @distance = distance
   end
 
   def convert_to_array
-    [@location, @address, @distance, @url]
+    [@location, @address, @url, @distance]
   end
 
   def self.destination_input
