@@ -12,6 +12,10 @@ class Mel
     @url = url
   end
 
+  def convert_to_array
+    [@location, @address, @distance, @url]
+  end
+
   def self.destination_input
     destination = {}
     INPUTS.each do |input|

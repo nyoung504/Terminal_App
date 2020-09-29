@@ -1,19 +1,20 @@
 [
-  
-  { 
+  {
     "location": "Coffee in CBD",
     "address": "Melbourne CBD",
-    "url":
-    "https://www.broadsheet.com.au/melbourne/guides/cafes-melbourne",
-    "distance":  "21.4 km (25 mins)"
-    }, 
-
-    {
-      "location": "12 Apostles",
-      "address": "Port Campbell NAtional Park",
-      "url":
-      "https://www.parks.vic.gov.au/places-to-see/parks/port-campbell-national-park/things-to-do/twelve-apostles",
-      "distance":  "234.3 km (2hrs 30mins)"
-    }
-
+    "distance": "https://www.broadsheet.com.au/melbourne/guides/cafes-melbourne",
+    "url": "21.4 km (25 mins)"
+  },
+  {
+    "location": "12 Apostles",
+    "address": "Port Campbell NAtional Park",
+    "distance": "https://www.parks.vic.gov.au/places-to-see/parks/port-campbell-national-park/things-to-do/twelve-apostles",
+    "url": "234.3 km (2hrs 30mins)"
+  },
+  {
+    "location": "Penguin Parade",
+    "address": "1019 Ventnor Rd, Summerlands",
+    "distance": "https://www.penguins.org.au/",
+    "url": "169 km (2hr)"
+  }
 ]

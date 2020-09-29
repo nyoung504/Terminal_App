@@ -20,7 +20,7 @@ class Menu
 
   def terminal_table
     rows = @destination_repo.destinations.map do |destination|
-      [destination["location"], destination["address"], destination["distance"], destination["url"]]
+      destination.convert_to_array
     end
     table = Terminal::Table.new({ headings: INPUTS, rows: rows })
     puts table
@@ -35,6 +35,7 @@ class Menu
       when 2
         @destination_repo.create_destination
       when 3
+        @destination_repo.write_destination
         exit
       else
         puts 'Invalid Selection.'
