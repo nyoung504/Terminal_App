@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    byebug (9.1.0)
     pastel (0.8.0)
       tty-color (~> 0.5)
     terminal-table (1.8.0)
@@ -22,6 +23,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug (~> 9.0, >= 9.0.6)
   terminal-table (~> 1.8)
   tty-prompt (~> 0.22.0)
 
