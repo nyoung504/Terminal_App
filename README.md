@@ -12,4 +12,18 @@ git clone https://github.com/nyoung504/Terminal_App ~/Terminal_app
 ```bash
 ~/Terminal_app/bin/setup
 ```
+5. Open bash profile 
+ ```bash
+ open ~/.bash_profile
+```
+and add the following: 
+```bash
+ export PATH=$PATH:$HOME/Documents/Termapp/bin
+ ``` 
+
+ 6. To run the app type 
+ ```bash
+ destinations
+ ```
+
 
