@@ -1,6 +1,8 @@
 module MelHelper
+  path = File.dirname(__FILE__).split('/')
+  path.pop
+  DESTINATIONS_FILE = "#{path.join('/')}/public/destinations.json".freeze
   INPUTS = %i[location address url distance].freeze
   HEADINGS = %i[MELBS_LOCATION ADDRESS WEBSITE DISTANCE_FROM_AIRPORT].freeze
-  DESTINATIONS_FILE = "#{Dir.pwd}/public/destinations.json".freeze
   PROMPT = TTY::Prompt.new
 end

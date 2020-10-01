@@ -16,7 +16,7 @@ class Menu
 
   def terminal_table
     rows = @destination_repo.destinations.map(&:convert_to_array)
-    table = Terminal::Table.new({ headings: HEADINGS, rows: rows, title: '****************  DESTINATIONS IN MELBOURNE, VIC  ****************'.colorize(:cyan).on_blue.underline })
+    table = Terminal::Table.new({ headings: HEADINGS, rows: rows, title: 'DESTINATIONS IN MELBOURNE, VIC' })
     puts "\n\n"
     puts ' ░██╗░░░░░░░██╗███████╗██╗░░░░░░█████╗░░█████╗░███╗░░░███╗███████╗'.colorize(:blue)
     puts ' ░██║░░██╗░░██║██╔════╝██║░░░░░██╔══██╗██╔══██╗████╗░████║██╔════╝'.colorize(:blue)
