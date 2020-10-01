@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require 'terminal-table'
+require 'tty-prompt'
+require 'colorize'
+require 'byebug'
+
+require_relative '../lib/menu'
+require_relative '../lib/mel'
+require_relative '../lib/destination_repo'
+
+app = Menu.new
+app.router
