@@ -16,14 +16,14 @@ git clone https://github.com/nyoung504/Terminal_App ~/Terminal_app
  ```bash
  open ~/.bash_profile
 ```
-and add the following: 
-```bash
- export PATH=$PATH:$HOME/Documents/Termapp/bin
- ``` 
 
- 6. To run the app type 
+6. Add the following: 
+```bash
+ export PATH=$PATH:$HOME/Terminal_app/bin
+ ``` 
+7. Restart terminal to ensure .bash_profile loads the app into your PATH
+
+8. To run the app type 
  ```bash
  destinations
  ```
-
-
