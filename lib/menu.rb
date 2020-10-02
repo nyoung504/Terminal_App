@@ -19,7 +19,7 @@ class Menu
     table = Terminal::Table.new({ headings: HEADINGS, rows: rows, title: 'DESTINATIONS IN MELBOURNE, VIC'.blue.on_light_white.bold })
     puts "\n\n"
     puts '▒█░░▒█ █▀▀ █░░ █▀▀ █▀▀█ █▀▄▀█ █▀▀ 　 ▀▀█▀▀ █▀▀█ 　 ▒█▀▄▀█ █▀▀ █░░ █▀▀▄ █▀▀█ █░░█ █▀▀█ █▀▀▄ █▀▀'.colorize(:blue)
-    puts '▒█▒█▒█ █▀▀ █░░ █░░ █░░█ █░▀░█ █▀▀ 　 ░░█░░ █░░█ 　 ▒█▒█▒█ █▀▀ █░░ █▀▀▄ █░░█ █░░█ █▄▄▀ █░░█ █▀▀'.colorize(:blue) 
+    puts '▒█▒█▒█ █▀▀ █░░ █░░ █░░█ █░▀░█ █▀▀ 　 ░░█░░ █░░█ 　 ▒█▒█▒█ █▀▀ █░░ █▀▀▄ █░░█ █░░█ █▄▄▀ █░░█ █▀▀'.colorize(:blue)
     puts '▒█▄▀▄█ ▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀▀ ▀░░░▀ ▀▀▀ 　 ░░▀░░ ▀▀▀▀ 　 ▒█░░▒█ ▀▀▀ ▀▀▀ ▀▀▀░ ▀▀▀▀ ░▀▀▀ ▀░▀▀ ▀░░▀ ▀▀▀'.colorize(:blue)
     puts "\n\n"
     puts table

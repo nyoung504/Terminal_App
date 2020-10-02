@@ -11,16 +11,16 @@ require_relative '../lib/destination_repo'
 app = Menu.new
 
 def help_docs
-  puts "-l and --list"
-  puts "shortcut to get to destinations list menu"
+  puts '-l and --list'
+  puts 'shortcut to get to destinations list menu'
 end
 
-if ARGV[0] == "-h"
+if ARGV[0] == '-h'
   help_docs
   exit
 end
 
-if ARGV[0] == "-l" || ARGV[0] == "--list"
+if ARGV[0] == '-l' || ARGV[0] == '--list'
   app.terminal_table
 else
   app.router
