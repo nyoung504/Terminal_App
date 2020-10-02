@@ -1,3 +1,4 @@
+require 'faraday'
 require 'json'
 require_relative 'mel_constants'
 
@@ -21,7 +22,8 @@ class DestinationRepo
         location: destination.location,
         address: destination.address,
         url: destination.url,
-        distance: destination.distance
+        distance: destination.distance,
+        weather: destination.weather
       }
     end
     File.write(DESTINATIONS_FILE, JSON.pretty_generate(data))
@@ -33,7 +35,8 @@ class DestinationRepo
         destination['location'],
         destination['address'],
         destination['url'],
-        destination['distance']
+        destination['distance'],
+        destination['weather_response']
       )
     end
   end
@@ -44,7 +47,15 @@ class DestinationRepo
       destination[:location],
       destination[:address],
       destination[:url],
-      destination[:distance]
+      destination[:distance],
+      destination[:weather_response]
     )
+
+    # you need to pass in victoria, australia to get the correct data
+    response = JSON.parse(Faraday.get('http://api.openweathermap.org/data/2.5/weather?q=melbourne, victoria, australia&appid=ad3fbd690385eade58c5db2f5e1042d4&units=metric').body)
+    # this will give you an a hash with the correct data
+    # you then need to access the values in the hash
+    weather = response { 'results' }
+    pp weather
   end
 end

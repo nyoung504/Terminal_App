@@ -3,6 +3,7 @@ require 'terminal-table'
 require 'tty-prompt'
 require 'colorize'
 require 'byebug'
+require 'faraday'
 
 require_relative '../lib/menu'
 require_relative '../lib/mel'
@@ -25,4 +26,3 @@ if ARGV[0] == '-l' || ARGV[0] == '--list'
 else
   app.router
 end
-
