@@ -7,7 +7,7 @@ class Menu
   end
 
   def selection
-    PROMPT.select("Welcome to Melbourne's top Tourist Destinations".cyan.on_light_blue.bold) do |menu|
+    PROMPT.select("Welcome to Melbourne's top Tourist Destinations".blue.on_light_white.bold) do |menu|
       menu.choice({ name: 'View all destinations', value: 1 })
       menu.choice({ name: 'Create new destination', value: 2 })
       menu.choice({ name: 'Exit', value: 3 })
@@ -16,7 +16,7 @@ class Menu
 
   def terminal_table
     rows = @destination_repo.destinations.map(&:convert_to_array)
-    table = Terminal::Table.new({ headings: HEADINGS, rows: rows, title: 'DESTINATIONS IN MELBOURNE, VIC' })
+    table = Terminal::Table.new({ headings: HEADINGS, rows: rows, title: 'DESTINATIONS IN MELBOURNE, VIC'.blue.on_light_white.bold })
     puts "\n\n"
     puts '▒█░░▒█ █▀▀ █░░ █▀▀ █▀▀█ █▀▄▀█ █▀▀ 　 ▀▀█▀▀ █▀▀█ 　 ▒█▀▄▀█ █▀▀ █░░ █▀▀▄ █▀▀█ █░░█ █▀▀█ █▀▀▄ █▀▀'.colorize(:blue)
     puts '▒█▒█▒█ █▀▀ █░░ █░░ █░░█ █░▀░█ █▀▀ 　 ░░█░░ █░░█ 　 ▒█▒█▒█ █▀▀ █░░ █▀▀▄ █░░█ █░░█ █▄▄▀ █░░█ █▀▀'.colorize(:blue) 
