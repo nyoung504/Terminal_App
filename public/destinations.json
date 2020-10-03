@@ -3,70 +3,60 @@
     "location": "Bushwalk ",
     "address": "Grampians National Park",
     "url": "https://www.parks.vic.gov.au/",
-    "distance": "256 kms (3 hrs)",
-    "weather": null
+    "distance": "256 kms (3 hrs)"
   },
   {
     "location": "Coffee in CBD",
     "address": "Melbourne CBD",
     "url": "https://www.broadsheet.com.au/melbourne/guides/cafes-melbourne",
-    "distance": "21.4 kms (25 mins)",
-    "weather": null
+    "distance": "21.4 kms (25 mins)"
   },
   {
     "location": "Melbourne Zoo",
     "address": "Elliott Ave, Parkville VIC ",
     "url": "https://www.zoo.org.au/melbourne/",
-    "distance": "18 kms (16 mins)",
-    "weather": null
+    "distance": "18 kms (16 mins)"
   },
   {
     "location": "Mornington Peninsula",
     "address": "End Portsea Pub ",
     "url": "https://www.visitmorningtonpeninsula.org/",
-    "distance": "134 kms (2hrs)",
-    "weather": null
+    "distance": "134 kms (2hrs)"
   },
   {
     "location": "Penguin Parade",
     "address": "1019 Ventnor Rd, Summerlands",
     "url": "https://www.penguins.org.au/",
-    "distance": "169 kms (2hr)",
-    "weather": null
+    "distance": "169 kms (2hr)"
   },
   {
     "location": "Sovereign Hill - Gold Rush",
     "address": "Bradshaw St, Golden Point",
     "url": "https://www.sovereignhill.com.au/",
-    "distance": "113 kms (1hr 20m)",
-    "weather": null
+    "distance": "113 kms (1hr 20m)"
   },
   {
     "location": "Tower Hill ",
     "address": "Tower Hill VIC",
     "url": "https://www.towerhill.org.au/",
-    "distance": "277 kms (3hrs 15m)",
-    "weather": null
+    "distance": "277 kms (3hrs 15m)"
   },
   {
     "location": "12 Apostles",
     "address": "Port Campbell National Park",
     "url": "https://www.parks.vic.gov.au/",
-    "distance": "234.3 kms (2hrs 30m)",
-    "weather": null
+    "distance": "234.3 kms (2hrs 30m)"
   },
   {
     "location": "Wilsons Promontory",
     "address": "Gippsland VIC 3960",
     "url": "https://www.parks.vic.gov.au/",
-    "distance": "262 kms (4 hrs)",
-    "weather": null
+    "distance": "262 kms (4 hrs)"
   },
   {
     "location": "Yarra Valley Wineries",
     "address": "Yarra Valley region ",
     "url": "https://visityarravalley.com.au/",
-    "distance": "59 kms (1 hr)",
-    "weather": null
+    "distance": "59 kms (1 hr)"
   }
 ]

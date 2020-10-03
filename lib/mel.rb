@@ -5,12 +5,12 @@ class Mel
 
   include MelHelper
 
-  def initialize(location, address, url, distance, _weather)
+  def initialize(location, address, url, distance)
     @location = location
     @address = address
     @url = url
     @distance = distance
-    @weather = @weather
+    #@weather = @weather
   end
 
   def convert_to_array

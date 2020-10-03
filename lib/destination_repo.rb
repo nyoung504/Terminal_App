@@ -23,7 +23,7 @@ class DestinationRepo
         address: destination.address,
         url: destination.url,
         distance: destination.distance,
-        weather: destination.weather
+        #weather: destination.weather
       }
     end
     File.write(DESTINATIONS_FILE, JSON.pretty_generate(data))
@@ -36,7 +36,7 @@ class DestinationRepo
         destination['address'],
         destination['url'],
         destination['distance'],
-        destination['weather_response']
+        #destination['weather']
       )
     end
   end
@@ -48,14 +48,15 @@ class DestinationRepo
       destination[:address],
       destination[:url],
       destination[:distance],
-      destination[:weather_response]
+      #weather_call(destination[:weather])
     )
+  end
 
+ # def weather_call(response)
     # you need to pass in victoria, australia to get the correct data
-    response = JSON.parse(Faraday.get('http://api.openweathermap.org/data/2.5/weather?q=melbourne, victoria, australia&appid=ad3fbd690385eade58c5db2f5e1042d4&units=metric').body)
+  #  response = JSON.parse(Faraday.get('http://api.openweathermap.org/data/2.5/weather?q=melbourne, victoria, australia&appid=ad3fbd690385eade58c5db2f5e1042d4&units=metric').body)
     # this will give you an a hash with the correct data
     # you then need to access the values in the hash
-    weather = response { 'results' }
-    pp weather
-  end
+   # @weather = response{'results'}
+ # end
 end
