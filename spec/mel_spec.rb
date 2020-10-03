@@ -11,8 +11,8 @@ RSpec.describe 'Destination Model' do
       '5km (10m)'
     )
     # Act
-    actual_location = test_destination.location
+    actual_location = test_destination.address
     # Assert
-    expect(actual_location).to eq('Test')
+    expect(actual_location).to eq('address')
   end
 end
