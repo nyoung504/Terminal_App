@@ -3,7 +3,6 @@ require 'terminal-table'
 require 'tty-prompt'
 require 'colorize'
 require 'byebug'
-require 'faraday'
 
 require_relative '../lib/menu'
 require_relative '../lib/mel'

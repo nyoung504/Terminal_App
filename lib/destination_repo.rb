@@ -1,4 +1,4 @@
-require 'faraday'
+#require 'faraday'
 require 'json'
 require_relative 'mel_constants'
 
