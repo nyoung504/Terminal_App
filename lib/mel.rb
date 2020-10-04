@@ -16,6 +16,7 @@ class Mel
   def convert_to_array
     [@location, @address, @url, @distance, @weather]
   end
+  
 
   def self.destination_input
     destination = {}
