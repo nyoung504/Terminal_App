@@ -5,7 +5,7 @@ class Mel
 
   include MelHelper
 
-  def initialize(location, address, url, distance, weather)
+  def initialize(location, address, url, distance, _weather)
     @location = location
     @address = address
     @url = url

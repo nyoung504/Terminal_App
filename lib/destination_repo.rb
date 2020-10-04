@@ -5,8 +5,10 @@ require_relative 'mel_constants'
 class DestinationRepo
   attr_reader :destinations
 
+  # Include constants file for the headings in the table and the fixed inputs
   include MelHelper
 
+  # Initalize parsed json file
   def initialize
     @destinations = JSON.parse(read_destination)
     new_destinations
@@ -41,6 +43,7 @@ class DestinationRepo
     end
   end
 
+  # pushing a new destination into the table
   def create_destination
     destination = Mel.destination_input
     @destinations << Mel.new(
@@ -52,9 +55,9 @@ class DestinationRepo
     )
   end
 
-    #def weather_call(response)
+  # def weather_call(response)
   # you need to pass in victoria, australia to get the correct data
-      response = JSON.parse(Faraday.get('http://api.openweathermap.org/data/2.5/weather?q=melbourne, victoria, australia&appid=ad3fbd690385eade58c5db2f5e1042d4&units=metric').body)
-      weather = response['results']
-    #end
+  response = JSON.parse(Faraday.get('http://api.openweathermap.org/data/2.5/weather?q=melbourne, victoria, australia&appid=ad3fbd690385eade58c5db2f5e1042d4&units=metric').body)
+  weather = response['results']
+  # end
 end

@@ -1,11 +1,12 @@
 require_relative 'mel_constants'
 class Menu
   include MelHelper
-
+  # Initialize reading and writing existing data and new inputs from the user
   def initialize
     @destination_repo = DestinationRepo.new
   end
 
+  # using tty-prompt menu selection
   def selection
     PROMPT.select("Welcome to Melbourne's top Tourist Destinations".blue.on_light_white.bold) do |menu|
       menu.choice({ name: 'View all destinations', value: 1 })
@@ -14,6 +15,7 @@ class Menu
     end
   end
 
+  # using terminal table to display input results
   def terminal_table
     rows = @destination_repo.destinations.map(&:convert_to_array)
     table = Terminal::Table.new({ headings: HEADINGS, rows: rows, title: 'DESTINATIONS IN MELBOURNE, VIC'.blue.on_light_white.bold })
