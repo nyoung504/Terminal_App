@@ -10,13 +10,12 @@ class Mel
     @address = address
     @url = url
     @distance = distance
-    #@weather = @weather
+    # @weather = @weather
   end
 
   def convert_to_array
     [@location, @address, @url, @distance, @weather]
   end
-  
 
   def self.destination_input
     destination = {}

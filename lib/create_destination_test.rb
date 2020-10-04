@@ -5,7 +5,7 @@ require_relative 'mel'
 require_relative 'mel_constants'
 
 # Arrange
-ds_repo = DestinationRepo.new 
+ds_repo = DestinationRepo.new
 # Act
 ds_repo.create_destination
 # Assert
@@ -14,5 +14,4 @@ if ds_repo.destinations.last.location == 'Test L'
   puts 'test passed'
 else
   puts 'test failed'
-  end 
 end
